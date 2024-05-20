@@ -1,49 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
-body{
-    background-color: #3a4e2a;
+body {
+    background-color: #4a4470;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container{
-    height: 400px;
+.container {
+    display: flex;
+    flex-direction: row; /* Changed to row for side-by-side layout */
+    align-items: stretch; /* Ensure child elements stretch to container height */
+    justify-content: space-between;
+    height: 90%;
+    width: 80%; /* Adjust width as needed */
     background-color: #232931;
     color: #fff;
     border-radius: 25px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+    padding: 20px;
 }
 
-.left-info{
-    width: 270px;
-    height: 100%;
-    float:right;
+.left-info, .right-info {
+    width: 48%; /* Adjust widths to fit side by side */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.left-info {
     display: flex;
-    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background: url("1k.jpg");
     background-position: center;
     background-size: cover;
-    transform: scale(1.03) perspective(200px);
-    cursor: pointer;
+    border-radius: 25px;
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.677);
     transition: all 0.3s ease;
+    position: relative;
+    padding: 20px;
 }
 
-.left-info:hover{
+.left-info:hover {
     transform: scale(1.1) perspective(2500px) rotateY(5deg);
 }
 
-.pic-gradient{
+.pic-gradient {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -54,90 +67,110 @@ body{
     opacity: 0.5;
 }
 
-.today-info{
-    position: absolute;
+.today-info {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    z-index: 1;
+    color: #fff;
 }
 
-.today-weather{
-    position: absolute;
+.today-weather {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    bottom: 20px;
-    left: 20px;
+    align-items: center;
+    z-index: 1;
+    color: #fff;
 }
 
-.today-weather .bx{
+.today-weather .bx {
     font-size: 4.6rem;
 }
 
-.weather-temp{
+.weather-temp {
     font-weight: 700;
     font-size: 3.5rem;
 }
 
-.right-info{
-    float: right;
-    position: relative;
-    height: 100%;
-    padding-top: 25px;
-}
-.day-info{
-    padding: 25px 35px;
+.right-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #2d333b;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
-.day-info div:not(:last-child){
+
+.day-info {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-info div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 6px;
 }
-.day-info div .title{
-    font-weight: 700;
-}
-.day-info div .value{
-    float: right;
-}
-.days-list{
-    display:flex;
+
+.days-list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin: 10px 35px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #1f2631;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
 }
-.days-list li{
+
+.days-list li {
+    flex: 1;
     padding: 15px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.days-list li .bx{
-    margin-bottom: 2px;
+
+.days-list li .bx {
     font-size: 2rem;
+    margin-bottom: 2px;
 }
-.days-list li:hover{
+
+.days-list li:hover {
     transform: scale(1.1);
     background: #fff;
     color: #222831;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.84);
 }
-.days-list li .day-temp{
-    margin-top: 6px;
+
+.days-list li .day-temp {
     font-weight: 700;
 }
 
-.button-container{
-    padding: 25px 35px;
+.button-container {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.loc-button{
+.loc-button {
     outline: none;
     width: 100%;
+    max-width: 200px;
     border: none;
     font-weight: 700;
     border-radius: 25px;
@@ -149,8 +182,9 @@ body{
     transition: all 0.3s ease;
 }
 
-.loc-button:hover{
+.loc-button:hover {
     background: #1a237e;
     box-shadow: 0 5px 15px rgba(213, 209, 209, 0.466);
 }
+
 
