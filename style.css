@@ -18,7 +18,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     height: 90%;
