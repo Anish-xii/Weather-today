@@ -1,4 +1,4 @@
-# WeatherApp-Scart  (try-it : https://w-today.netlify.app )
+# WeatherApp-Scart  
 <p align="center">
 <img width="538" alt="Screenshot 2024-05-20 at 15 26 59" src="https://github.com/Anish-xii/weather-today/assets/164672680/936000a2-33a5-4848-8ed3-a34bd24f2795">
 </p>
