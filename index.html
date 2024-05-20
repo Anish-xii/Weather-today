@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>weatherApp-Scart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+                <div class="today-info">
+                    <h2>Sunday</h2>
+                    <span>19 May 2024</span>
+                    <div>
+                        <box-icon name='target-lock'></box-icon>
+                        <span>London, UK</span>
+                    </div>
+                </div>
+                <div class="today-weather">
+                    <i class='bx bx-sun' ></i>
+                    <h1 class="weather-temp">
+                        19°C
+                    </h1>
+                    <h3>Sunny</h3>
+                </div>
+            </div>
+
+            <div class="right-info">
+                <div class="day-info">
+                    <div>
+                        <span class="title">CHANSES OF RAIN</span>
+                        <span class="value">4 %</span>
+                    </div>
+                    <div>
+                        <span class="title">HUMIDITY</span>
+                        <span class="value">34 %</span>
+                    </div>
+                    <div>
+                        <span class="title">WIND SPEED</span>
+                        <span class="value">14 km/h</span>
+                    </div>
+                </div>
+
+                <ul class="days-list">
+                    <li>
+                        <i class='bx bx-cloud' ></i>
+                        <span>Mon</span>
+                        <span class="day-temp">21°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-light-rain' ></i>
+                        <span>Tue</span>
+                        <span class="day-temp">20°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-light-rain' ></i>
+                        <span>Wed</span>
+                        <span class="day-temp">17°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-sun' ></i>
+                        <span>Thr</span>
+                        <span class="day-temp">22°C</span>
+                    </li>
+                </ul>
+
+                <div class="button-container">
+                    <button class="loc-button">Search Location</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
