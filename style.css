@@ -18,7 +18,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90%;
@@ -37,7 +37,7 @@ body {
 
 .left-info {
     display: flex;
-    flex-direction: column;
+    flex-direction:row-reverse;
     align-items: center;
     justify-content: center;
     background: url("1k.jpg");
